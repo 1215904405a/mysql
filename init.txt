@@ -2,6 +2,9 @@ mysql  安装
 brew install mysql
 mysql.server start
 mysql.server stop
-ps -ef | grep mysql   kill -9 id
-
+ps -ef | grep mysql   kill -9 id
+1、首先设置密码
 update mysql.user set password=PASSWORD("123456") where User='root';
+然后执行下面语句
+2、mysql_upgrade -u root -p --force
+3、新建连接、数据库
