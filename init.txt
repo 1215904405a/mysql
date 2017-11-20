@@ -1,0 +1,7 @@
+mysql  安装
+brew install mysql
+mysql.server start
+mysql.server stop
+ps -ef | grep mysql   kill -9 id
+
+update mysql.user set password=PASSWORD("123456") where User='root';
